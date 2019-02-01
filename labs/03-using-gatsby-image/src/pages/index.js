@@ -1,15 +1,13 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-
-// TODO: import Bio component
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-
+import Bio from '../components/bio'
 function IndexPage({ data }) {
   return (
     <Layout>
       <SEO title="Home" keywords={[`blog`]} />
-      {/* TODO: render Bio component */}
+      <Bio/>
       <ul>
         {
           data.articles.edges.map(({ node }) => (
